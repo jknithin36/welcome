@@ -1,0 +1,21 @@
+@keyframes smoke {
+  0% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1),
+      0 0 40px rgba(255, 255, 255, 1), 0 0 60px rgba(255, 255, 255, 1),
+      0 0 80px rgba(255, 255, 255, 1), 0 0 100px rgba(255, 255, 255, 1),
+      0 0 120px rgba(255, 255, 255, 1), 0 0 140px rgba(255, 255, 255, 1);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0),
+      0 0 40px rgba(255, 255, 255, 0), 0 0 60px rgba(255, 255, 255, 0),
+      0 0 80px rgba(255, 255, 255, 0), 0 0 100px rgba(255, 255, 255, 0),
+      0 0 120px rgba(255, 255, 255, 0), 0 0 140px rgba(255, 255, 255, 0);
+  }
+}
+
+.smoky-text {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  animation: smoke 3s ease-out forwards;
+}
